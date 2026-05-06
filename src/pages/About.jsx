@@ -56,10 +56,11 @@ const GridMosaicReveal = ({ src, rows = 12, cols = 8 }) => {
   );
 };
 
-const teamImages = ['/12.svg', '/13.svg', '/14.svg'];
+const teamImages = ['/team1_ai.png', '/p11.webp', '/p15.webp'];
 const testimonials = [
-  { name: 'Dev Raj', role: 'Business Owner', text: 'Their professionalism and creativity exceeded our expectations. Our corporate space now exudes sophistication, impressing every client who walks through the door.' },
-  { name: 'Chaitnya Deep', role: 'Villa Owner', text: "Our villa's redesign was nothing short of spectacular. Luxe's team truly understands luxury, and their attention to detail is unparalleled." }
+  { name: 'Ananya Sharma', role: 'Penthouse Owner', text: 'Working with Luxe was a seamless experience. They turned my vision into a reality with a touch of elegance that I couldn’t have imagined.' },
+  { name: 'Vikram Singh', role: 'Tech Executive', text: 'The team at Luxe Interiors is truly world-class. Their ability to blend modern technology with classic design is what sets them apart.' },
+
 ];
 
 const About = () => {
@@ -184,6 +185,7 @@ const About = () => {
         </div>
       </section>
 
+
       {/* Founder - Cinematic Parallax Split */}
       <section className="founder-premium section-padding">
         <div className="container">
@@ -196,7 +198,7 @@ const About = () => {
                 transition={{ duration: 1.6, ease: [0.77, 0, 0.175, 1] }}
                 viewport={{ once: true, margin: "-10px" }}
               >
-                <img src="/owner.webp" alt="Mr. Kuna Ram" className="founder-img" />
+                <img src="/owner_ai.png" alt="Founder" className="founder-img" />
                 <div className="founder-overlay-glow"></div>
               </motion.div>
             </div>
@@ -208,8 +210,8 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 <div className="founder-badge glass-effect">
-                  <h4>Mr. Kuna Ram</h4>
-                  <span>Founder & CEO</span>
+                  <h4>Visionary Founder</h4>
+                  <span>CEO & Lead Architect</span>
                 </div>
                 <span className="tag-gold mt-40 d-block"></span>
                 <h2 className="section-title text-4xl">Driven by Passion, <br />Guided by Quality</h2>
@@ -218,8 +220,7 @@ const About = () => {
                   "We don't just design rooms; we curate experiences that linger in the heart."
                 </p>
                 <p className="founder-desc">
-                  Since 2008, Julian Vane has led Luxe Interiors & Decorators with an unwavering commitment to excellence.
-                  His philosophy integrates traditional craftsmanship with modern innovation, ensuring that every project reflects the true essence of its inhabitant.
+                  With over 16 years of experience, our leadership combines artistic vision with technical mastery to create bespoke interiors that define modern luxury.
                 </p>
                 <Link to="/contact" className="btn-premium primary mt-40">Talk to Our Founder</Link>
               </motion.div>

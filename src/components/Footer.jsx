@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer overlay-hidden">
       <div className="footer-glow-left"></div>
       <div className="footer-glow-right"></div>
-      
+
       {/* Floating Background Text */}
       <div className="footer-bg-text">LUXE</div>
 
@@ -52,22 +52,22 @@ const Footer = () => {
           <div className="footer-section footer-map">
             <h3>Find Us</h3>
             <div className="map-wrapper">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.32040003056!2d77.51860641151603!3d12.971598700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1728021326822!5m2!1sen!2sin" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.32040003056!2d77.51860641151603!3d12.971598700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1728021326822!5m2!1sen!2sin"
                 width="100%" height="150" style={{ border: 0, borderRadius: '8px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Luxe Interiors Location"></iframe>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Luxe Interiors & Decorators. All rights reserved.</p>
-          <p className="credit">Designed by <a href="https://www.devcreationsblr.com/" target="_blank" rel="noopener noreferrer" className="highlight-credit">Dev Creations & Solutions</a></p>
+          <p>&copy; 2026 Luxe Interiors & Decorators. All rights reserved.</p>
+          <p className="credit">Designed by <a href="https://codebrella.com/" target="_blank" rel="noopener noreferrer" className="highlight-credit">Codebrella</a></p>
         </div>
       </div>
-      
+
       {/* WhatsApp Floating */}
-      <motion.a 
-        href="https://wa.me/+910000000000" 
+      <motion.a
+        href="https://wa.me/+910000000000"
         className="whatsapp-btn"
         target="_blank"
         whileHover={{ scale: 1.1 }}

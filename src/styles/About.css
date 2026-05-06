@@ -358,20 +358,18 @@
 
 .team-img-bound {
   width: 100%;
+  aspect-ratio: 4/5; /* Fixed aspect ratio for uniformity */
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  /* Allows the full image to dictate the height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .team-img-bound img {
   width: 100%;
-  height: auto;
-  object-fit: contain; /* ensures full image is visible, no cropping */
+  height: 100%;
+  object-fit: cover; /* Fill the card completely and crop if necessary */
   display: block;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
   filter: brightness(0.9) contrast(1.1);
