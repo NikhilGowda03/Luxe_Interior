@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --primary: #2D4F4F; /* Deep Forest Green */
+  --primary-glow: rgba(45, 79, 79, 0.2);
+  --secondary: #112323; /* Deepest Forest */
+  --accent: #BC8A5F; /* Warm Wood/Bronze */
+  --bg-dark: #EAE2D6; /* Warm Sandstone Background */
+  --bg-soft: #DAD2C3; /* Muted Sand */
+  --bg-darker: #C8BEAA; /* Deep Stone */
+  --bg-card: #F2EFE9; /* Lighter Creamy Card */
+  --glass: rgba(234, 226, 214, 0.7);
+  --glass-border: rgba(45, 79, 79, 0.1);
+  --text-main: #1A2A2A; /* High Contrast Deep Teal/Slate */
+  --text-muted: #5C6363; /* Muted Slate Gray-Green */
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.12);
+  --border-radius-lg: 24px;
+  --border-radius-md: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-padding {
+  padding: 70px 8%;
+}
+
+@media (max-width: 1200px) {
+  .section-padding { padding: 60px 6%; }
+}
+@media (max-width: 820px) {
+  .section-padding { padding: 50px 24px; }
+}
+@media (max-width: 540px) {
+  .section-padding { padding: 35px 20px; }
+}
+@media (max-width: 360px) {
+  .section-padding { padding: 25px 16px; }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Premium Glassmorphism Utility */
+.glass-effect {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* Section Headings */
+.heading-main {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heading-main .tag {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.heading-main h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1200px) {
+  .heading-main h2 { font-size: 3.5rem; }
+}
+@media (max-width: 820px) {
+  .heading-main h2 { font-size: 3rem; }
+}
+@media (max-width: 540px) {
+  .heading-main h2 { font-size: 2.5rem; margin-bottom: 16px; }
+}
+@media (max-width: 360px) {
+  .heading-main h2 { font-size: 2rem; margin-bottom: 12px; }
+}
+
+.text-center { text-align: center; }
+
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 60px; }
+.mt-80 { margin-top: 80px; }
+.mt-100 { margin-top: 100px; }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 60px; }
+
+/* Premium Buttons */
+.btn-premium {
+  padding: 16px 36px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-premium.primary {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.btn-premium.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px var(--primary-glow);
+}
+
+.btn-premium.outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-premium.outline:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.btn-premium.outline.light {
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.btn-premium.outline.light:hover {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
+}
+
+.btn-premium.outline-gold {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-premium.outline-gold:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  box-shadow: 0 10px 20px var(--primary-glow);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a2a2a;
+}
+
+/* Premium Light Buttons */
+.btn-premium-light {
+  padding: 18px 42px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: var(--transition-smooth);
+  position: relative;
+  z-index: 1;
+}
+
+.btn-premium-light.primary {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.btn-premium-light.primary:hover {
+  transform: translateY(-5px);
+  background: var(--primary);
+  box-shadow: 0 15px 30px var(--primary-glow);
+}
+
+.btn-premium-light.outline {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.btn-premium-light.outline:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+/* Glass Utility (Light) */
+.glass-effect {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-premium);
+}
+
+/* Custom Scrollbar (Light) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Restored Global Hero & Tag Classes needed for legacy sub-pages */
+.about-hero {
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.about-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25); /* Simple subtle overlay for clarity */
+  z-index: 2;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 40px; /* Reduced from 80px */
+}
+
+.about-hero h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tag-gold {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.about-hero h1 span {
+  color: var(--primary);
+  display: block;
+  text-shadow: none;
+}
+
+.about-hero .breadcrumb, 
+.about-hero .tag-gold,
+.hero-cinematic .tag-gold {
+  color: #fff !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 1200px) {
+  .about-hero h1 { font-size: 4rem; }
+}
+@media (max-width: 820px) {
+  .about-hero h1 { font-size: 3.5rem; }
+}
+@media (max-width: 540px) {
+  .about-hero h1 { font-size: 2.8rem; margin: 15px 0; }
+}
+@media (max-width: 360px) {
+  .about-hero h1 { font-size: 2.2rem; margin: 10px 0; }
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+}
+
+.breadcrumb span.active {
+  color: var(--primary);
+}
+
+.tag-gold {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
