@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 const slides = [
-  { img: '/slider1.svg', title: 'Sophistication \nReimagined', subtitle: 'Transforming spaces into timeless masterpieces.' },
-  { img: '/slider2.svg', title: 'Elegant Living \nSpaces', subtitle: 'Where luxury meets comfort in every detail.' },
-  { img: '/slider3.svg', title: 'Curated \nInteriors', subtitle: 'Personalized designs that reflect your unique story.' },
-  { img: '/slider4.svg', title: 'Modern \nWorkplaces', subtitle: 'Inspiring environments for productivity and growth.' },
-  { img: '/slider5.svg', title: 'Artisan \nCraftsmanship', subtitle: '15+ years of excellence in interior design.' },
+  { img: '/slider1.webp', title: 'Sophistication \nReimagined', subtitle: 'Transforming spaces into timeless masterpieces.' },
+  { img: '/slider2.webp', title: 'Elegant Living \nSpaces', subtitle: 'Where luxury meets comfort in every detail.' },
+  { img: '/slider3.webp', title: 'Curated \nInteriors', subtitle: 'Personalized designs that reflect your unique story.' },
+  { img: '/slider4.webp', title: 'Modern \nWorkplaces', subtitle: 'Inspiring environments for productivity and growth.' },
+  { img: '/slider5.webp', title: 'Artisan \nCraftsmanship', subtitle: '15+ years of excellence in interior design.' },
 ];
 
 const homeProjects = [
